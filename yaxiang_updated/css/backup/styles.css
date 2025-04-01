@@ -1,0 +1,335 @@
+:root {
+    --primary-dark-blue: #0B2447;
+    --secondary-dark-blue: #19376D;
+    --accent-blue: #576CBC;
+    --light-blue: #A5D7E8;
+    --light-blue-gray: #E5EBF1;
+    --medium-gray: #8896A6;
+    --dark-gray: #4A5568;
+    --gold: #D4AF37;
+    --light-gold: #F0E68C;
+    --deep-red: #7D1A1D;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.navbar {
+    background: linear-gradient(to right, var(--primary-dark-blue), var(--secondary-dark-blue));
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: var(--light-gold) !important;
+}
+
+.btn-primary {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-dark-blue);
+    border-color: var(--secondary-dark-blue);
+}
+
+.btn-outline-primary {
+    border-color: var(--gold);
+    color: var(--gold);
+    font-weight: 500;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--gold);
+    color: white;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(11, 36, 71, 0.8), rgba(25, 55, 109, 0.9)), url('../images/tech-bg.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/circuit-pattern.png');
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-blue-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature-icon i {
+    font-size: 36px;
+    color: var(--primary-dark-blue);
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-highlight {
+    background-color: var(--light-blue-gray);
+    padding: 80px 0;
+}
+
+.tech-img {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tech-content h3 {
+    color: var(--primary-dark-blue);
+    margin-bottom: 20px;
+}
+
+.cta-section {
+    background: linear-gradient(to right, var(--primary-dark-blue), var(--secondary-dark-blue));
+    color: white;
+    padding: 60px 0;
+}
+
+footer {
+    background-color: var(--primary-dark-blue);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+footer h5 {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: var(--light-gold);
+    text-decoration: underline;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.tech-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tech-specs-table th {
+    background-color: var(--primary-dark-blue);
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tech-specs-table tr:nth-child(odd) {
+    background-color: var(--light-blue-gray);
+}
+
+.tech-specs-table td {
+    padding: 12px 15px;
+}
+
+.tech-specs-table tr:hover {
+    background-color: var(--light-gold);
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.language-switch a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.language-switch a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.language-switch a.active {
+    background-color: var(--gold);
+    color: white;
+}
+
+.language-switch .divider {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+}
+
+.page-header {
+    background: linear-gradient(to right, var(--primary-dark-blue), var(--secondary-dark-blue));
+    color: white;
+    padding: 60px 0;
+    margin-top: 80px;
+}
+
+.product-img-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.product-img-thumbnail:hover,
+.product-img-thumbnail.active {
+    border-color: var(--gold);
+}
+
+.feature-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feature-list i {
+    color: var(--gold);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.nav-tabs .nav-link {
+    color: var(--dark-gray) !important;
+    font-weight: 500;
+    border: none;
+    padding: 15px 20px;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-dark-blue) !important;
+    border-bottom: 3px solid var(--gold);
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+    color: var(--gold) !important;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-content {
+    padding: 30px 0;
+}
+
+.download-card {
+    border: 1px solid var(--light-blue-gray);
+    border-radius: 6px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.download-icon {
+    font-size: 36px;
+    color: var(--primary-dark-blue);
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .feature-card {
+        margin-bottom: 30px;
+    }
+
+    .tech-highlight .row {
+        flex-direction: column-reverse;
+    }
+
+    .tech-img {
+        margin-top: 30px;
+    }
+
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .product-thumbnails {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

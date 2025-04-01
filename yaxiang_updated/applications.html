@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>染色封片机YXRF-3000系列 - 亚湘病理 - 全球应用案例</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <!-- 轮播样式 -->
+    <link rel="stylesheet" href="css/testimonial-carousel.css">
+    <style>
+        .case-study-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .case-study-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .case-study-flag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-study-content {
+            padding: 25px;
+            background-color: white;
+        }
+
+        .case-study-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tag-hospital {
+            background-color: #E3F2FD;
+            color: #1976D2;
+        }
+
+        .tag-research {
+            background-color: #E8F5E9;
+            color: #388E3C;
+        }
+
+        .tag-university {
+            background-color: #FFF3E0;
+            color: #E64A19;
+        }
+
+        .tag-clinic {
+            background-color: #F3E5F5;
+            color: #7B1FA2;
+        }
+
+        .case-study-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary-dark-blue);
+        }
+
+        .case-study-location {
+            color: var(--medium-gray);
+            font-size: 14px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .case-study-location i {
+            margin-right: 5px;
+            color: var(--gold);
+        }
+
+        .case-study-description {
+            color: var(--dark-gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .case-study-stats {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-weight: 700;
+            color: var(--accent-blue);
+            font-size: 18px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--medium-gray);
+        }
+
+        .region-title {
+            position: relative;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        .region-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--gold);
+        }
+
+        .region-subtitle {
+            text-align: center;
+            color: var(--medium-gray);
+            margin-bottom: 40px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            margin: 0 10px 10px 0;
+            border-radius: 30px;
+            background-color: var(--light-blue-gray);
+            color: var(--dark-gray);
+            border: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--gold);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="亚湘病理" class="lang-zh" data-lang="zh">
+                <img src="images/logo.jpg" alt="YAXIANG" class="lang-en d-none" data-lang="en">
+                <span class="lang-zh" data-lang="zh">亚湘</span>
+                <span class="lang-en d-none" data-lang="en">YAXIANG</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active lang-zh" href="index.html" data-lang="zh">首页</a>
+                        <a class="nav-link active lang-en d-none" href="index.html" data-lang="en">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang-zh" href="product-details.html" data-lang="zh">产品介绍</a>
+                        <a class="nav-link lang-en d-none" href="product-details.html" data-lang="en">Product</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link lang-zh" href="applications.html" data-lang="zh">应用案例</a>
+                        <a class="nav-link lang-en d-none" href="applications.html" data-lang="en">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang-zh" href="downloads.html" data-lang="zh">下载中心</a>
+                        <a class="nav-link lang-en d-none" href="downloads.html" data-lang="en">Downloads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang-zh" href="contact.html" data-lang="zh">联系我们</a>
+                        <a class="nav-link lang-en d-none" href="contact.html" data-lang="en">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="language-switch ms-3">
+                        <a href="#" class="lang-btn active" data-lang="zh">中文</a>
+                        <span class="divider">|</span>
+                        <a href="#" class="lang-btn" data-lang="en">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 页面标题 -->
+    <header class="page-header">
+        <div class="container">
+            <!-- 中文内容 -->
+            <div class="lang-zh">
+                <h1 class="fw-bold">全球应用案例</h1>
+                <p class="lead">YXRF-3000系列染色封片机在全球范围内的成功应用</p>
+            </div>
+            <!-- 英文内容 -->
+            <div class="lang-en d-none">
+                <h1 class="fw-bold">Global Applications</h1>
+                <p class="lead">Successful applications of YXRF-3000 Series Stainer & Coverslipper worldwide</p>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- 亚洲案例 -->
+    <section class="py-4">
+        <div class="container">
+            <!-- 中文内容 -->
+            <div class="lang-zh">
+                <h2 class="region-title">中国及亚洲地区应用案例</h2>
+                <p class="region-subtitle">中国及亚洲地区医疗机构对YXRF-3000系列的高度认可</p>
+
+                <div class="row case-studies-container">
+                    <!-- 中国案例1 -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">三甲医院</span>
+                                <h3 class="case-study-title">华东地区综合医院</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>中国 · 上海</span>
+                                </div>
+                                <p class="case-study-description">
+                                    该医院病理科每月处理超过3000例病理切片，自2023年引进YXRF-3000A后，样本处理效率提升40%，诊断周期缩短近一天，大幅提升了患者满意度。</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">3000+</div>
+                                        <div class="stat-label">月均切片</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">40%</div>
+                                        <div class="stat-label">效率提升</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">设备数量</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中国案例2 -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,research">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1581093458791-9d09c85a2a3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-research">研究机构</span>
+                                <h3 class="case-study-title">国家级病理研究中心</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>中国 · 北京</span>
+                                </div>
+                                <p class="case-study-description">
+                                    该研究中心专注于肿瘤病理研究，采用YXRF-3000B进行大量科研样本处理。设备的高精度染色和封片功能确保了研究数据的准确性，支持了多项国家级科研项目。</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">15+</div>
+                                        <div class="stat-label">研究项目</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">99.8%</div>
+                                        <div class="stat-label">染色准确率</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">设备数量</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 中国案例 3 -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1606206860940-b46a54872e64?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">三甲医院</span>
+                                <h3 class="case-study-title">华中地区综合医院</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>中国 · 武汉</span>
+                                </div>
+                                <p class="case-study-description">
+                                    该医院病理科采用全自动染色封片机，处理大量肿瘤及病理样本。设备具备高精度染色和封片功能，提高切片质量，确保病理诊断的精准性，支持医院科研及临床诊断需求。
+                                </p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">18+</div>
+                                        <div class="stat-label">染色研究项目</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">99.6%</div>
+                                        <div class="stat-label">染色准确率</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">1</div>
+                                        <div class="stat-label">染色封片设备</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中国案例 4-->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">三甲医院</span>
+                                <h3 class="case-study-title">综合医院</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>中国 · 长沙</span>
+                                </div>
+                                <p class="case-study-description">
+                                    该医院病例中心配备YXRF-3000B染色封片机，实现标准化、自动化的病理切片处理。设备保证样本染色均匀，封片效果稳定，为病理医生提供高质量样本，提高诊断效率。
+                                </p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">22+</div>
+                                        <div class="stat-label">病理分析项目</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">99.8%</div>
+                                        <div class="stat-label">封片成功率</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">自动化染色机</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中国案例5 -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1606811841270-0f24f3f77628?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-research">研究机构</span>
+                                <h3 class="case-study-title">高通量病理实验室</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>中国 · 广州</span>
+                                </div>
+                                <p class="case-study-description">
+                                    该医院病理科引入全自动染色封片一体机，支持高通量病理样本处理。采用智能化染色流程，减少人工误差，提高诊断一致性，为肿瘤病理研究提供可靠数据。
+                                </p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">30+</div>
+                                        <div class="stat-label">病理检测项目</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">99.9%</div>
+                                        <div class="stat-label">染色稳定性</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">自动染色封片设备</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 越南案例 -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-star text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">中央医院</span>
+                                <h3 class="case-study-title">南部地区医疗中心</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>越南 · 胡志明市</span>
+                                </div>
+                                <p class="case-study-description">
+                                    作为越南最大的医疗中心之一，该机构在2024年引进了YXRF-3000A，显著提升了病理科的工作效率。设备的自动化程度高，减轻了技术人员的工作负担，同时提高了诊断质量。
+                                </p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">2800+</div>
+                                        <div class="stat-label">月均切片</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">45%</div>
+                                        <div class="stat-label">效率提升</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">1</div>
+                                        <div class="stat-label">设备数量</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 英文内容 -->
+            <div class="lang-en d-none">
+                <h2 class="region-title">Asian Applications</h2>
+                <p class="region-subtitle">High recognition of YXRF-3000 Series by medical institutions in Asia</p>
+
+                <div class="row case-studies-container">
+                    <!-- 中国案例1 (英文) -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">Tertiary Hospital</span>
+                                <h3 class="case-study-title">Eastern Region General Hospital</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>China · Shanghai</span>
+                                </div>
+                                <p class="case-study-description">The pathology department processes over 3,000
+                                    pathological sections monthly. Since introducing YXRF-3000A in 2023, sample
+                                    processing efficiency has increased by 40%, shortening the diagnostic cycle by
+                                    nearly one day and significantly improving patient satisfaction.</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">3000+</div>
+                                        <div class="stat-label">Monthly Slides</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">40%</div>
+                                        <div class="stat-label">Efficiency Gain</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">Units</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中国案例2 (英文) -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,research">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1581093458791-9d09c85a2a3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-research">Research Institute</span>
+                                <h3 class="case-study-title">National Pathology Research Center</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>China · Beijing</span>
+                                </div>
+                                <p class="case-study-description">This research center focuses on tumor pathology
+                                    research, using YXRF-3000B for processing numerous research samples. The
+                                    high-precision staining and coverslipping functions ensure the accuracy of research
+                                    data, supporting multiple national research projects.</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">15+</div>
+                                        <div class="stat-label">Research Projects</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">99.8%</div>
+                                        <div class="stat-label">Staining Accuracy</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">3</div>
+                                        <div class="stat-label">Units</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 日本案例 (英文) -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-sun text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">University Hospital</span>
+                                <h3 class="case-study-title">Kanto Region Medical Center</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Japan · Tokyo</span>
+                                </div>
+                                <p class="case-study-description">This medical center is one of the first medical
+                                    institutions in Japan to introduce the YXRF-3000 series. After rigorous quality
+                                    assessment, the hospital chose the YXRF-3000PLUS model for processing high-precision
+                                    pathological sections, particularly excelling in cancer diagnosis.</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">4500+</div>
+                                        <div class="stat-label">Monthly Slides</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">30%</div>
+                                        <div class="stat-label">Cost Reduction</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">Units</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 越南案例 (英文) -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="asia,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-star text-danger"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">Central Hospital</span>
+                                <h3 class="case-study-title">Southern Region Medical Center</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Vietnam · Ho Chi Minh City</span>
+                                </div>
+                                <p class="case-study-description">As one of the largest medical centers in Vietnam, this
+                                    institution introduced YXRF-3000A in 2024, significantly improving the efficiency of
+                                    the pathology department. The high degree of automation has reduced the workload of
+                                    technicians while improving diagnostic quality.</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">2800+</div>
+                                        <div class="stat-label">Monthly Slides</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">45%</div>
+                                        <div class="stat-label">Efficiency Gain</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">1</div>
+                                        <div class="stat-label">Units</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 欧洲案例 -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <!-- 中文内容 -->
+            <div class="lang-zh">
+                <h2 class="region-title">欧洲地区应用案例</h2>
+                <p class="region-subtitle">欧洲医疗机构对YXRF-3000系列的专业认可</p>
+
+                <div class="row case-studies-container">
+                    <!-- 德国案例 -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="europe,university">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1520454974749-611b7248ffdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag-checkered"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-university">大学医学院</span>
+                                <h3 class="case-study-title">巴伐利亚医学研究所</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>德国 · 慕尼黑</span>
+                                </div>
+                                <p class="case-study-description">
+                                    该医学院在评估多款染色封片设备后，选择了YXRF-3000B作为教学和研究用设备。设备的稳定性和多样化的染色方案支持了多种病理学研究和教学需求。</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">12</div>
+                                        <div class="stat-label">染色方案</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">200+</div>
+                                        <div class="stat-label">学生使用</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">设备数量</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 意大利案例1 -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="europe,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-pizza-slice"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">区域医疗中心</span>
+                                <h3 class="case-study-title">伦巴第病理诊断中心</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>意大利 · 米兰</span>
+                                </div>
+                                <p class="case-study-description">
+                                    作为意大利北部重要的病理诊断中心，该机构引进YXRF-3000PLUS后，显著提高了病理诊断的准确性和效率。特别是在处理大量样本时，设备的自动化功能大幅减少了人为错误。
+                                </p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">5000+</div>
+                                        <div class="stat-label">月均切片</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">35%</div>
+                                        <div class="stat-label">效率提升</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">3</div>
+                                        <div class="stat-label">设备数量</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 德国案例2 -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="europe,research">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1467307983825-619715426c70?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag-checkered"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-research">研究机构</span>
+                                <h3 class="case-study-title">北莱茵病理研究院</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>德国 · 科隆</span>
+                                </div>
+                                <p class="case-study-description">
+                                    该研究院专注于神经病理学研究，采用YXRF-3000B进行特殊染色和封片处理。设备的高精度和稳定性为神经组织样本的研究提供了可靠保障，支持了多项神经退行性疾病的研究项目。
+                                </p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">8</div>
+                                        <div class="stat-label">研究项目</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">99.5%</div>
+                                        <div class="stat-label">染色准确率</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">设备数量</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 英文内容 -->
+            <div class="lang-en d-none">
+                <h2 class="region-title">European Applications</h2>
+                <p class="region-subtitle">Professional recognition of YXRF-3000 Series by European medical institutions
+                </p>
+
+                <div class="row case-studies-container">
+                    <!-- 德国案例 (英文) -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="europe,university">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1520454974749-611b7248ffdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag-checkered"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-university">Medical School</span>
+                                <h3 class="case-study-title">Bavarian Institute of Medicine</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Germany · Munich</span>
+                                </div>
+                                <p class="case-study-description">After evaluating multiple staining and coverslipping
+                                    devices, this medical school chose YXRF-3000B for teaching and research. The
+                                    stability and diverse staining protocols support various pathological research and
+                                    teaching needs.</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">12</div>
+                                        <div class="stat-label">Staining Protocols</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">200+</div>
+                                        <div class="stat-label">Students</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">Units</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 意大利案例1 (英文) -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="europe,hospital">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-pizza-slice"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-hospital">Regional Medical Center</span>
+                                <h3 class="case-study-title">Lombardy Pathology Diagnostic Center</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Italy · Milan</span>
+                                </div>
+                                <p class="case-study-description">As an important pathology diagnostic center in
+                                    northern Italy, this institution significantly improved the accuracy and efficiency
+                                    of pathological diagnosis after introducing YXRF-3000PLUS. The automated functions
+                                    greatly reduce human error, especially when processing large numbers of samples.</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">5000+</div>
+                                        <div class="stat-label">Monthly Slides</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">35%</div>
+                                        <div class="stat-label">Efficiency Gain</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">3</div>
+                                        <div class="stat-label">Units</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 意大利案例2 (英文) -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="europe,clinic">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-pizza-slice"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-clinic">Specialty Clinic</span>
+                                <h3 class="case-study-title">Tuscany Dermatopathology Center</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Italy · Florence</span>
+                                </div>
+                                <p class="case-study-description">This dermatopathology specialty clinic uses YXRF-3000A
+                                    to process skin biopsy samples. The precise staining function is crucial for
+                                    dermatopathological diagnosis. Since introducing the equipment, diagnostic accuracy
+                                    has improved by 15%, especially in the differential diagnosis of rare skin lesions.
+                                </p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">1200+</div>
+                                        <div class="stat-label">Monthly Slides</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">15%</div>
+                                        <div class="stat-label">Accuracy Gain</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">1</div>
+                                        <div class="stat-label">Units</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 德国案例2 (英文) -->
+                    <div class="col-lg-4 col-md-6 case-study-item" data-category="europe,research">
+                        <div class="case-study-card">
+                            <div class="case-study-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1467307983825-619715426c70?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                                <div class="case-study-flag">
+                                    <i class="fas fa-flag-checkered"></i>
+                                </div>
+                            </div>
+                            <div class="case-study-content">
+                                <span class="case-study-tag tag-research">Research Institute</span>
+                                <h3 class="case-study-title">North Rhine Pathology Institute</h3>
+                                <div class="case-study-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Germany · Cologne</span>
+                                </div>
+                                <p class="case-study-description">This institute focuses on neuropathology research,
+                                    using YXRF-3000B for special staining and coverslipping. The high precision and
+                                    stability of the equipment provide reliable support for the study of neural tissue
+                                    samples, supporting multiple research projects on neurodegenerative diseases.</p>
+                                <div class="case-study-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">8</div>
+                                        <div class="stat-label">Research Projects</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">99.5%</div>
+                                        <div class="stat-label">Staining Accuracy</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2</div>
+                                        <div class="stat-label">Units</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价部分 -->
+    <section class="py-5">
+        <div class="container">
+            <!-- 中文内容 -->
+            <div class="lang-zh">
+                <h2 class="region-title">客户评价</h2>
+                <p class="region-subtitle">来自全球用户的真实反馈</p>
+
+                <div class="testimonial-carousel">
+                    <div class="testimonial-slide active">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">
+                                            "YXRF-3000系列的自动化程度令人印象深刻，大大减轻了我们技术人员的工作负担。染色质量稳定，封片效果出色，是我们实验室的得力助手。"</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">张主任</h6>
+                                                <small class="text-muted">三甲医院病理科</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"作为一家新建的病理实验室，我们选择了YXRF-3000作为核心设备。其易用性使新员工能够快速上手，节省了培训时间。"
+                                        </p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">孙院长</h6>
+                                                <small class="text-muted">私立医疗集团</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"亚湘的设备在我们医院运行已有三年，几乎没有出现过故障。试剂管理系统非常智能，减少了浪费和人为错误。"</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">周医生</h6>
+                                                <small class="text-muted">综合医院病理科</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"YXRF-3000B的多种染色方案非常适合我们的研究需求。设备操作简单，维护成本低，是性价比极高的选择。"</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">李教授</h6>
+                                                <small class="text-muted">医学院研究中心</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"我们实验室每天处理大量样本，YXRF-3000PLUS的高通量和稳定性是我们选择它的主要原因。售后服务也非常及时。"
+                                        </p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">王技师</h6>
+                                                <small class="text-muted">第三方医学检验所</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">
+                                            "作为一家专注于肿瘤诊断的机构，我们对染色质量有极高要求。YXRF-3000系列满足了我们的所有需求，特别是在特殊染色方面表现出色。"</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">陈主任</h6>
+                                                <small class="text-muted">肿瘤专科医院</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">
+                                            "我们是亚湘设备的早期用户，从YXRF-2000升级到3000系列后，效率提升了近50%。设备的稳定性和可靠性令人印象深刻。"</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">吴教授</h6>
+                                                <small class="text-muted">医科大学附属医院</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <p class="card-text">
+                                            "YXRF-3000A的自动化程度和智能化功能大大减轻了我们的工作负担。特别是在人手紧张的时候，设备的可靠性帮助我们保持了工作效率。"</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">刘技师</h6>
+                                                <small class="text-muted">地区医疗中心</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"我们比较了市场上多款染色封片设备后选择了YXRF-3000系列。其染色质量和封片效果最为稳定，售后服务也非常到位。"
+                                        </p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">赵主任</h6>
+                                                <small class="text-muted">省级病理诊断中心</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">
+                                            "作为一家新建的病理实验室，YXRF-3000系列是我们的首选设备。操作简单，维护方便，对于我们这样的小型实验室来说非常适合。"</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">郑医生</h6>
+                                                <small class="text-muted">私立专科医院</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">
+                                            "YXRF-3000PLUS的多功能性令人印象深刻。我们可以根据不同的研究需求调整染色方案，设备的灵活性满足了我们多样化的研究需求。"</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">黄研究员</h6>
+                                                <small class="text-muted">生物医学研究所</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"我们使用YXRF-3000B已有两年，设备运行稳定，染色质量一致。亚湘的技术支持团队反应迅速，解决问题高效。"
+                                        </p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">马技师</h6>
+                                                <small class="text-muted">中心医院病理科</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 轮播控制 -->
+                <div class="testimonial-controls text-center mt-4">
+                    <button class="testimonial-prev btn btn-sm btn-outline-primary me-2"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-indicators d-inline-block">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
+                        <button class="indicator" data-slide="2"></button>
+                        <button class="indicator" data-slide="3"></button>
+                    </div>
+                    <button class="testimonial-next btn btn-sm btn-outline-primary ms-2"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- 英文内容 -->
+            <div class="lang-en d-none">
+                <h2 class="region-title">Customer Testimonials</h2>
+                <p class="region-subtitle">Authentic feedback from global users</p>
+
+                <div class="testimonial-carousel">
+                    <div class="testimonial-slide active">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"The level of automation in the YXRF-3000 series is
+                                            impressive, greatly reducing the workload of our technicians. The staining
+                                            quality is consistent, and the coverslipping effect is excellent, making it
+                                            a valuable assistant in our laboratory."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Dr. Zhang</h6>
+                                                <small class="text-muted">Tertiary Hospital Pathology Department</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"As a newly established pathology laboratory, we chose the
+                                            YXRF-3000 as our core equipment. Its ease of use allows new employees to
+                                            quickly get started, saving training time."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Director Sun</h6>
+                                                <small class="text-muted">Private Healthcare Group</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"YaXiang's equipment has been running in our hospital for
+                                            three years with almost no failures. The reagent management system is very
+                                            intelligent, reducing waste and human error."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Dr. Zhou</h6>
+                                                <small class="text-muted">General Hospital Pathology Department</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"The various staining protocols of YXRF-3000B are very
+                                            suitable for our research needs. The equipment is simple to operate and has
+                                            low maintenance costs, making it a highly cost-effective choice."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Prof. Li</h6>
+                                                <small class="text-muted">Medical School Research Center</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"Our laboratory processes a large number of samples every
+                                            day, and the high throughput and stability of YXRF-3000PLUS are the main
+                                            reasons we chose it. The after-sales service is also very timely."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Technician Wang</h6>
+                                                <small class="text-muted">Third-party Medical Testing Laboratory</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"As an institution focused on tumor diagnosis, we have
+                                            extremely high requirements for staining quality. The YXRF-3000 series meets
+                                            all our needs, especially excelling in special staining."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Director Chen</h6>
+                                                <small class="text-muted">Oncology Specialty Hospital</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"We are early users of YaXiang equipment, and after
+                                            upgrading from YXRF-2000 to the 3000 series, efficiency has increased by
+                                            nearly 50%. The stability and reliability of the equipment are impressive."
+                                        </p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Prof. Wu</h6>
+                                                <small class="text-muted">Medical University Affiliated Hospital</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"The automation and intelligent functions of YXRF-3000A
+                                            greatly reduce our workload. Especially when we are short-staffed, the
+                                            reliability of the equipment helps us maintain work efficiency."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Technician Liu</h6>
+                                                <small class="text-muted">Regional Medical Center</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"After comparing several staining and coverslipping devices
+                                            on the market, we chose the YXRF-3000 series. Its staining quality and
+                                            coverslipping effect are the most stable, and the after-sales service is
+                                            also excellent."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Director Zhao</h6>
+                                                <small class="text-muted">Provincial Pathology Diagnostic Center</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"As a newly established pathology laboratory, the YXRF-3000
+                                            series is our first choice. It's simple to operate and easy to maintain,
+                                            which is very suitable for small laboratories like ours."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Dr. Zheng</h6>
+                                                <small class="text-muted">Private Specialty Hospital</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"The versatility of YXRF-3000PLUS is impressive. We can
+                                            adjust staining protocols according to different research needs, and the
+                                            flexibility of the equipment meets our diverse research requirements."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Researcher Huang</h6>
+                                                <small class="text-muted">Biomedical Research Institute</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <p class="card-text">"We have been using YXRF-3000B for two years, and the
+                                            equipment runs stably with consistent staining quality. YaXiang's technical
+                                            support team responds quickly and solves problems efficiently."</p>
+                                        <div class="d-flex align-items-center mt-4">
+                                            <div class="ms-3">
+                                                <h6 class="mb-0">Technician Ma</h6>
+                                                <small class="text-muted">Central Hospital Pathology Department</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 轮播控制 -->
+                <div class="testimonial-controls text-center mt-4">
+                    <button class="testimonial-prev btn btn-sm btn-outline-primary me-2"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-indicators d-inline-block">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
+                        <button class="indicator" data-slide="2"></button>
+                        <button class="indicator" data-slide="3"></button>
+                    </div>
+                    <button class="testimonial-next btn btn-sm btn-outline-primary ms-2"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行动号召 -->
+    <section class="cta-section">
+        <div class="container">
+            <!-- 中文内容 -->
+            <div class="lang-zh">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h2 class="text-white mb-3">准备提升您的实验室效率？</h2>
+                        <p class="text-white-50 mb-0">联系我们了解更多关于YXRF-3000系列全自动染色封片一体机的信息</p>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
+                        <a href="contact.html" class="btn btn-light btn-lg">立即咨询</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 英文内容 -->
+            <div class="lang-en d-none">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h2 class="text-white mb-3">Ready to Enhance Your Laboratory Efficiency?</h2>
+                        <p class="text-white-50 mb-0">Contact us to learn more about the YXRF-3000 Series Automatic
+                            Stainer & Coverslipper</p>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
+                        <a href="contact.html" class="btn btn-light btn-lg">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="lang-zh" data-lang="zh">关于我们</h5>
+                    <h5 class="lang-en d-none" data-lang="en">About Us</h5>
+                    <p class="lang-zh" data-lang="zh">我们致力于为全球病理实验室提供高品质、高效率的自动化设备，提升病理诊断的准确性和效率。</p>
+                    <p class="lang-en d-none" data-lang="en">We are committed to providing high-quality, efficient
+                        automated equipment for pathology laboratories worldwide, improving the accuracy and efficiency
+                        of pathological diagnosis.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="lang-zh" data-lang="zh">联系方式</h5>
+                    <h5 class="lang-en d-none" data-lang="en">Contact</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> <span class="lang-zh"
+                                data-lang="zh">中国上海市浦东新区张江高科技园区</span><span class="lang-en d-none"
+                                data-lang="en">Zhangjiang Hi-Tech Park, Pudong, Shanghai, China</span></li>
+                        <li><i class="fas fa-phone me-2"></i> +86 21 5888 XXXX</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@example.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="lang-zh" data-lang="zh">快速链接</h5>
+                    <h5 class="lang-en d-none" data-lang="en">Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html" class="lang-zh" data-lang="zh">首页</a><a href="index.html"
+                                class="lang-en d-none" data-lang="en">Home</a></li>
+                        <li><a href="product-details.html" class="lang-zh" data-lang="zh">产品介绍</a><a
+                                href="product-details.html" class="lang-en d-none" data-lang="en">Products</a></li>
+                        <li><a href="applications.html" class="lang-zh" data-lang="zh">应用案例</a><a
+                                href="applications.html" class="lang-en d-none" data-lang="en">Applications</a></li>
+                        <li><a href="downloads.html" class="lang-zh" data-lang="zh">下载中心</a><a href="downloads.html"
+                                class="lang-en d-none" data-lang="en">Downloads</a></li>
+                        <li><a href="contact.html" class="lang-zh" data-lang="zh">联系我们</a><a href="contact.html"
+                                class="lang-en d-none" data-lang="en">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="lang-zh mb-0" data-lang="zh">© 2025 亚湘病理 版权所有</p>
+                <p class="lang-en d-none mb-0" data-lang="en">© 2025 YAXIANG Pathology. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 客户评价轮播脚本 -->
+    <script src="js/testimonial-carousel.js"></script>
+
+    <!-- 语言切换脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 获取所有语言切换按钮
+            const langBtns = document.querySelectorAll('.lang-btn');
+
+            // 为每个按钮添加点击事件
+            langBtns.forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // 获取目标语言
+                    const targetLang = this.getAttribute('data-lang');
+
+                    // 移除所有按钮的active类
+                    langBtns.forEach(b => b.classList.remove('active'));
+
+                    // 为当前按钮添加active类
+                    this.classList.add('active');
+
+                    // 切换语言内容显示
+                    toggleLanguage(targetLang);
+
+                    // 保存语言偏好到本地存储
+                    localStorage.setItem('preferredLanguage', targetLang);
+                });
+            });
+
+            // 切换语言内容显示的函数
+            function toggleLanguage(lang) {
+                // 隐藏所有语言内容
+                document.querySelectorAll('.lang-zh, .lang-en').forEach(el => {
+                    el.classList.add('d-none');
+                });
+
+                // 显示目标语言内容
+                document.querySelectorAll(`.lang-${lang}`).forEach(el => {
+                    el.classList.remove('d-none');
+                });
+            }
+
+            // 页面加载时检查本地存储中的语言偏好
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang) {
+                // 找到对应语言的按钮并模拟点击
+                const btn = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);
+                if (btn) {
+                    btn.click();
+                }
+            }
+
+            // 导航高亮动画效果
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                if (link.classList.contains('active')) {
+                    link.classList.add('nav-link-highlighted');
+                }
+
+                link.addEventListener('mouseenter', function () {
+                    this.classList.add('nav-link-hover');
+                });
+
+                link.addEventListener('mouseleave', function () {
+                    if (!this.classList.contains('active')) {
+                        this.classList.remove('nav-link-hover');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
